@@ -1,8 +1,8 @@
 const Navbar = () => {
     return ( 
-        <nav className="bg-gray-800 p-4">
+        <nav className="bg-gray-900 p-4">
             <ul>
-                <li>Filmes</li>
+                <li className="text-xl font-semibold italic">The Movies</li>
             </ul>
         </nav>
      );

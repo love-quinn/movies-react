@@ -12,10 +12,34 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Star Rating Styles */
+.star-rating {
+  display: inline-flex;
+  gap: 2px;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.star {
+  color: #e5e7eb; /* Light gray for empty stars */
+}
+
+.star.filled {
+  color: #fbbf24; /* Amber color for filled stars */
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+  
+  .star {
+    color: #374151; /* Darker gray for empty stars in dark mode */
+  }
+  
+  .star.filled {
+    color: #f59e0b; /* Slightly darker amber for dark mode */
   }
 }
 
